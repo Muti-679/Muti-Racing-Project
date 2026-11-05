@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal profile of Ahmad Mu'thy Anshary, known as Muti.">
+  <title>MUTI RACING PROJECT | Ahmad Mu'thy Anshary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-label="Loading">
+    <div class="loader-brand">MUTI <span>RACING PROJECT</span></div>
+    <div class="start-lights" aria-hidden="true">
+      <i></i><i></i><i></i><i></i><i></i>
+    </div>
+    <p>LIGHTS OUT. LET'S GO.</p>
+  </div>
+
+  <div class="cursor-aura" id="cursorAura" aria-hidden="true">
+    <img src="assets/cursor-chibi.png" alt="">
+  </div>
+
+  <div class="audio-control" id="audioControl">
+    <button class="audio-toggle" id="audioToggle" type="button" aria-label="Putar musik latar">▶</button>
+    <div class="audio-details"><span>F1 THEME</span><input id="volumeControl" type="range" min="0" max="1" step="0.01" value="0.35" aria-label="Volume musik"></div>
+  </div>
+  <audio id="backgroundMusic" src="assets/f1-theme.mp3" loop preload="none"></audio>
+  <audio id="clickSound" src="assets/click-sound.mp3" preload="auto"></audio>
+
+  <header class="site-header">
+    <a class="brand" href="#home"><span class="brand-mark">M</span><span>MUTI<span class="brand-light"> / RACING PROJECT</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi">☰</button>
+    <nav id="mainNav">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#hobbies">HOBBIES</a>
+      <a href="#gallery">GALLERY</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-pad" id="home">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/motorsport.png" aria-hidden="true">
+        <source src="assets/rb22-background-muted.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="pulse"></span> PERSONAL DRIVER PROFILE · 2026</p>
+        <p class="hero-kicker">THE STORY OF</p>
+        <h1>AHMAD MU’THY<br><span>ANSHARY</span></h1>
+        <p class="hero-tagline">DRIVEN BY PASSION.<br><span>FOCUSED ON THE FUTURE.</span></p>
+        <p class="hero-intro">Kenali Muti. Mahasiswa, pecinta olahraga, penjelajah, dan penggemar motorsport yang selalu ingin mencoba hal baru.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about">EXPLORE PROFILE <b>↗</b></a>
+          <a class="text-link" href="#gallery">VIEW THE GALLERY <span>→</span></a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>01</strong><span>RACING MINDSET</span></div>
+          <div><strong>06</strong><span>HOBBY MOMENTS</span></div>
+          <div><strong>∞</strong><span>ROOM TO GROW</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-photo-frame">
+          <img src="assets/profile-lebak-naga.png" alt="Foto profil Muti di Lebak Naga">
+          <div class="photo-label"><span>LEBAK NAGA · PROFILE</span><strong>MMXXVI</strong></div>
+        </div>
+        <div class="hero-number">M<span>01</span></div>
+        <div class="hero-sticker">FULL<br>THROTTLE</div>
+      </div>
+      <div class="hero-bottomline"><span>BASED IN YOGYAKARTA, INDONESIA</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="about section-pad" id="about">
+      <div class="section-heading reveal"><p class="eyebrow">01 / DRIVER INFORMATION</p><h2>ABOUT <span>ME</span></h2></div>
+      <div class="about-layout">
+        <div class="about-card reveal">
+          <div class="card-topline"><span>PERSONAL DATA</span><span>NO. 01</span></div>
+          <h3>MU’THY<br>ANSHARY</h3>
+          <p class="about-quote">“Selalu terbuka untuk pengalaman baru, terus belajar, dan berani menentukan arah masa depan.”</p>
+          <div class="data-list">
+            <div><span>Nama lengkap</span><b>Ahmad Mu'thy Anshary</b></div>
+            <div><span>Nama panggilan</span><b>Muti</b></div>
+            <div><span>Asal</span><b>Banjarmasin, Kalimantan Selatan</b></div>
+            <div><span>Kampus</span><b>Sekolah Tinggi Multi Media MMTC Yogyakarta</b></div>
+            <div><span>Program studi</span><b>Manajemen Informasi</b></div>
+          </div>
+        </div>
+        <div class="about-story reveal">
+          <p class="eyebrow">A LITTLE INTRODUCTION</p>
+          <h3>Curious mind.<br><span>Ambitious spirit.</span></h3>
+          <p>Saya adalah mahasiswa Manajemen Informasi yang tertarik pada teknologi, informasi digital, olahraga, dan dunia motorsport. Saya senang mencoba pengalaman baru, menjelajahi tempat, serta mempelajari hal-hal yang dapat membuka peluang di masa depan.</p>
+          <p>Salah satu tujuan jangka panjang saya adalah membangun usaha di bidang perkebunan kelapa sawit. Saya percaya bahwa proses belajar dan pengalaman sehari-hari menjadi bekal untuk mewujudkannya.</p>
+          <div class="goal-box"><span>FUTURE TARGET</span><strong>ENTREPRENEURSHIP</strong><small>Membangun usaha di sektor perkebunan kelapa sawit.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hobbies section-pad" id="hobbies">
+      <div class="section-heading reveal"><p class="eyebrow">02 / BEYOND THE TRACK</p><h2>MY <span>HOBBIES</span></h2><p class="section-desc">Hal-hal yang saya nikmati di luar aktivitas perkuliahan.</p></div>
+      <div class="hobby-grid">
+        <article class="hobby-card reveal"><div class="hobby-icon">🏐</div><span>01 / SPORT</span><h3>VOLLEYBALL</h3><p>Menjaga energi, kerja sama, dan semangat kompetitif.</p></article>
+        <article class="hobby-card reveal"><div class="hobby-icon">🏸</div><span>02 / SPORT</span><h3>BADMINTON</h3><p>Melatih fokus, kecepatan, dan ketepatan gerak.</p></article>
+        <article class="hobby-card reveal"><div class="hobby-icon">🎣</div><span>03 / OUTDOOR</span><h3>FISHING</h3><p>Menikmati waktu di alam dan pengalaman memancing.</p></article>
+        <article class="hobby-card reveal"><div class="hobby-icon">🏁</div><span>04 / MOTORSPORT</span><h3>WATCHING F1</h3><p>Mengikuti balapan, strategi tim, dan persaingan para pembalap.</p></article>
+      </div>
+    </section>
+
+    <section class="interests section-pad">
+      <div class="interest-copy reveal"><p class="eyebrow">03 / WHAT DRIVES ME</p><h2>MORE THAN<br><span>ONE PASSION.</span></h2><p>Setiap ketertarikan memberi ruang untuk belajar dan berkembang.</p></div>
+      <div class="interest-tags reveal"><span>TECH & DIGITAL INFORMATION</span><span>ADVENTURE & OUTDOOR</span><span>FORMULA 1</span><span>ENTREPRENEURSHIP</span><span>AGRICULTURE & PLANTATION</span><span>NEW EXPERIENCES</span></div>
+    </section>
+
+    <section class="gallery section-pad" id="gallery">
+      <div class="section-heading reveal"><p class="eyebrow">04 / MOMENTS & MEMORIES</p><h2>THE <span>GALLERY</span></h2><p class="section-desc">Beberapa momen dari aktivitas dan hal yang saya sukai.</p></div>
+      <div class="gallery-wrap reveal">
+        <button class="gallery-arrow prev" id="galleryPrev" aria-label="Foto sebelumnya">←</button>
+        <div class="gallery-track" id="galleryTrack">
+          <figure class="gallery-item"><img src="assets/fishing.png" alt="Muti sedang memancing"><figcaption><span>01</span><b>FISHING DAY</b><small>Outdoor · Fishing</small></figcaption></figure>
+          <figure class="gallery-item"><img src="assets/football.png" alt="Muti bermain sepak bola"><figcaption><span>02</span><b>ON THE FIELD</b><small>Sport · Football</small></figcaption></figure>
+          <figure class="gallery-item"><img src="assets/badminton.png" alt="Muti bermain badminton"><figcaption><span>03</span><b>COURT SESSION</b><small>Sport · Badminton</small></figcaption></figure>
+          <figure class="gallery-item"><img src="assets/hiking.png" alt="Muti di Bukit Sapu Angin"><figcaption><span>04</span><b>CHASE THE VIEW</b><small>Adventure · Hiking</small></figcaption></figure>
+          <figure class="gallery-item"><img src="assets/motorsport.png" alt="Muti dengan pakaian motorsport"><figcaption><span>05</span><b>RACING VIBES</b><small>Motorsport · F1</small></figcaption></figure>
+          <figure class="gallery-item"><img src="assets/volleyball.png" alt="Muti bermain voli"><figcaption><span>06</span><b>ABOVE THE NET</b><small>Sport · Volleyball</small></figcaption></figure>
+        </div>
+        <button class="gallery-arrow next" id="galleryNext" aria-label="Foto berikutnya">→</button>
+      </div>
+      <div class="gallery-progress"><span id="galleryProgress"></span></div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="contact-panel reveal">
+        <div><p class="eyebrow">05 / GET IN TOUCH</p><h2>LET'S<br><span>CONNECT.</span></h2><p class="contact-note">Terbuka untuk berkenalan, bertukar ide, dan membangun koneksi baru.</p></div>
+        <div class="contact-links">
+          <a href="https://www.instagram.com/mt.ansr_/" target="_blank" rel="noopener"><span>INSTAGRAM</span><b>@mt.ansr_ ↗</b></a>
+          <a href="https://wa.me/6283849470709" target="_blank" rel="noopener"><span>WHATSAPP</span><b>083849470709 ↗</b></a>
+          <a href="mailto:muminah12.net@gmail.com"><span>EMAIL</span><b>muminah12.net@gmail.com ↗</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home"><span class="brand-mark">M</span><span>MUTI<span class="brand-light"> / RACING PROJECT</span></span></a><p>BUILT WITH PASSION · © 2026 AHMAD MU’THY ANSHARY</p><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
